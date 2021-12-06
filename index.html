@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bauhaus Illustration Generator</title>
+
+    <link rel="stylesheet" href="./styles/bauhaus-illustration-generator.css">
+    <script src="./scripts/bauhaus-illustration-generator.js" defer></script>
+</head>
+<body>
+
+    <input type="checkbox" id="settingsToggle" name="settingsToggle" class="toggle">
+    <main class="container">
+        <h1 class="title">Bauhaus illustration generator</h1>
+        <p class="description">Click to generate new illustration</p>
+        <canvas class="canvas" width="520" height="520"></canvas>
+
+        <label for="settingsToggle" class="label">
+            <button class="label__button"></button>
+        </label>
+
+        <aside class="settings">
+            <h4 class="settings__title">Settings</h4>
+            <fieldset class="settings__fieldset settings__fieldset--cells">
+                <label for="settingsCells" class="settings__label">Cells</label>
+                <input id="settingsCells" type="range" min="0" max="4" value="2" step="1">
+            </fieldset>
+            <fieldset class="settings__fieldset">
+                <label for="settingsColorOne" class="settings__label">Color #1</label>
+                <input id="settingsColorOne" type="color" value="#BCCAC0" data-color-index="0">
+            </fieldset>
+            <fieldset class="settings__fieldset">
+                <label for="settingsColorTwo" class="settings__label">Color #2</label>
+                <input id="settingsColorTwo" type="color" value="#75938E" data-color-index="1">
+            </fieldset>
+            <fieldset class="settings__fieldset">
+                <label for="settingsColorThree" class="settings__label">Color #3</label>
+                <input id="settingsColorThree" type="color" value="#CDA273" data-color-index="2">
+            </fieldset>
+            <fieldset class="settings__fieldset">
+                <label for="settingsColorFour" class="settings__label">Color #4</label>
+                <input id="settingsColorFour" type="color" value="#D47D41" data-color-index="3">
+            </fieldset>
+            <fieldset class="settings__fieldset">
+                <label for="settingsColorFive" class="settings__label">Color #5</label>
+                <input id="settingsColorFive" type="color" value="#9F503E" data-color-index="4">
+            </fieldset>
+            <fieldset class="settings__fieldset">
+                <label for="settingsColorSix" class="settings__label">Color #6</label>
+                <input id="settingsColorSix" type="color" value="#403940" data-color-index="5">
+            </fieldset>
+
+            <button class="button button--reset">Reset</button>
+        </aside>
+    </main>
+
+</body>
+</html>
