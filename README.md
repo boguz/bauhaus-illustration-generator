@@ -20,6 +20,7 @@ Codepen [here](https://codepen.io/Boguz/pen/xxXwLGO?editors=0010)
 - Button to reset settings to default
 
 ### Ideas
+- [ ] Change JS into TypeScript
 - [ ] Add mobile styles
 - [ ] Add "animate" button, which would create new animation every x seconds
 - [ ] Add "export" button, which would export illustration as svg or pdf
